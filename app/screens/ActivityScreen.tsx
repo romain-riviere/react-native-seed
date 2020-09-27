@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import I18n from 'react-native-i18n';
 
 class ActivityScreen extends React.Component {
   constructor(props: Readonly<{}>) {
@@ -9,7 +10,7 @@ class ActivityScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Activity Screen</Text>
+        <Text>{I18n.t('ACTIVITY_SCREEN.TITLE')}</Text>
       </View>
     );
   }

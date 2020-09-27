@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import I18n from 'react-native-i18n';
 
 class HomeScreen extends React.Component {
   constructor(props: Readonly<{}>) {
@@ -9,7 +10,7 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Home Screen</Text>
+        <Text>{I18n.t('HOME_SCREEN.TITLE')}</Text>
       </View>
     );
   }

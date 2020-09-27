@@ -8,6 +8,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {AppColors, AppIcons, AppRoutes} from '../Constants';
 import PreferencesScreen from '../screens/ProfileScreen';
 import {StyleSheet} from 'react-native';
+import I18n from 'react-native-i18n';
 
 const Tab = createBottomTabNavigator();
 
@@ -46,7 +47,7 @@ class TabNavigator extends React.Component {
             name={AppRoutes.TAB_HOME}
             component={HomeScreen}
             options={({navigation}) => ({
-              title: 'Home',
+              title: I18n.t('HOME_SCREEN.TITLE'),
               headerRight: () => (
                 <TouchableOpacity style={styles.iconButtonRight}>
                   <Ionicons
@@ -62,7 +63,7 @@ class TabNavigator extends React.Component {
           <Tab.Screen
             name={AppRoutes.TAB_ACTIVITY}
             component={ActivityScreen}
-            options={{title: 'Activity'}}
+            options={{title: I18n.t('ACTIVITY_SCREEN.TITLE')}}
           />
         </Tab.Navigator>
       </NavigationContainer>
