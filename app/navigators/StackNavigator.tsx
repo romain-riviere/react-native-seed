@@ -1,7 +1,10 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import {
+  CardStyleInterpolators,
+  createStackNavigator,
+} from '@react-navigation/stack';
 import TabNavigator from './TabNavigator';
 import ProfileScreen from '../screens/ProfileScreen';
 import {TouchableOpacity} from 'react-native-gesture-handler';
@@ -27,7 +30,11 @@ class StackNavigator extends React.Component {
   render() {
     return (
       <NavigationContainer independent={true}>
-        <Stack.Navigator initialRouteName={AppRoutes.STACK_TABS}>
+        <Stack.Navigator
+          initialRouteName={AppRoutes.STACK_TABS}
+          screenOptions={{
+            cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+          }}>
           <Stack.Screen
             name={AppRoutes.STACK_TABS}
             component={TabNavigator}
