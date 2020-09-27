@@ -8,4 +8,8 @@ export default {
   PROFILE_SCREEN: {
     TITLE: 'Profile',
   },
+  AUTHENTICATION_SCREEN: {
+    LOGIN: {TITLE: 'Login'},
+    REGISTER: {TITLE: 'Register'},
+  },
 };

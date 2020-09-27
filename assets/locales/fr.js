@@ -8,4 +8,8 @@ export default {
   ACTIVITY_SCREEN: {
     TITLE: 'Activité',
   },
+  AUTHENTICATION_SCREEN: {
+    LOGIN: {TITLE: 'Connexion'},
+    REGISTER: {TITLE: 'Inscription'},
+  },
 };

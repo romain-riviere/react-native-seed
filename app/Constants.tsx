@@ -7,6 +7,8 @@ export module AppRoutes {
   export const STACK_PROFILE = 'stack.profile';
   export const TAB_HOME = 'tab.home';
   export const TAB_ACTIVITY = 'tab.activity';
+  export const AUTH_LOGIN = 'auth.LOGIN';
+  export const AUTH_REGISTER = 'auth.REGISTER';
 }
 
 export module AppIcons {

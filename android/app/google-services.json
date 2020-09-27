@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "330371363",
+    "firebase_url": "https://reactnativeseed-140e8.firebaseio.com",
+    "project_id": "reactnativeseed-140e8",
+    "storage_bucket": "reactnativeseed-140e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330371363:android:1f15b929547490f891fc96",
+        "android_client_info": {
+          "package_name": "com.reactnativeseed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330371363-vko5m0rj7pc9rrl9arjf27vjoa3o3o95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reactnativeseed",
+            "certificate_hash": "d7136c3c585412981811e42b7c87e97900c70ede"
+          }
+        },
+        {
+          "client_id": "330371363-v3a2g63pgigrggg26rrsaq7u1m909l3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCSclFmIabQJdXVL_j_8DI_pgm8EXrCHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330371363-v3a2g63pgigrggg26rrsaq7u1m909l3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
