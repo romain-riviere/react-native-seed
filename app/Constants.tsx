@@ -18,6 +18,8 @@ export module AppIcons {
   export const PREFERENCES_ACTIVE = 'person';
   export const ACTIVITY = 'flask-outline';
   export const ACTIVITY_ACTIVE = 'flask';
+  export const VERIFIED = 'checkmark-circle-outline';
+  export const NOT_VERIFIED = 'close-circle-outline';
 }
 
 export module AppColors {
@@ -25,4 +27,7 @@ export module AppColors {
   export const INACTIVE = '#656565';
   export const BLACK = '#000000';
   export const WHITE = '#ffffff';
+  export const SUCCESS = '#00db04';
+  export const DANGER = '#e70000';
+  export const WARNING = '#fd8c00';
 }

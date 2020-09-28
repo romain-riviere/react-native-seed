@@ -12,10 +12,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {AppColors, AppIcons, AppRoutes, AppSettings} from '../Constants';
 import I18n from 'react-native-i18n';
 import {TransitionSpec} from '@react-navigation/stack/lib/typescript/src/types';
+import auth, {FirebaseAuthTypes} from '@react-native-firebase/auth';
 
 const Stack = createStackNavigator();
 
 class StackNavigator extends React.Component {
+  public user: FirebaseAuthTypes.User | null = null;
+
   private animationConfig: TransitionSpec = {
     animation: 'timing',
     config: {
@@ -25,6 +28,9 @@ class StackNavigator extends React.Component {
 
   constructor(props: Readonly<{}>) {
     super(props);
+    auth().onAuthStateChanged((user) => {
+      this.user = user;
+    });
   }
 
   render() {
@@ -44,17 +50,18 @@ class StackNavigator extends React.Component {
                 open: this.animationConfig,
                 close: this.animationConfig,
               },
-              headerRight: () => (
-                <TouchableOpacity
-                  style={styles.headerRight}
-                  onPress={() => navigation.push(AppRoutes.STACK_PROFILE)}>
-                  <Ionicons
-                    name={AppIcons.PREFERENCES}
-                    size={25}
-                    color={AppColors.INACTIVE}
-                  />
-                </TouchableOpacity>
-              ),
+              headerRight: () =>
+                this.user?.isAnonymous ? null : (
+                  <TouchableOpacity
+                    style={styles.headerRight}
+                    onPress={() => navigation.push(AppRoutes.STACK_PROFILE)}>
+                    <Ionicons
+                      name={AppIcons.PREFERENCES}
+                      size={25}
+                      color={AppColors.INACTIVE}
+                    />
+                  </TouchableOpacity>
+                ),
             })}
           />
           <Stack.Screen

@@ -7,6 +7,8 @@ export default {
   },
   PROFILE_SCREEN: {
     TITLE: 'Profile',
+    EMAIL_VERIFIED: 'E-mail verified',
+    EMAIL_NOT_VERIFIED: 'Verification needed',
   },
   AUTHENTICATION_SCREEN: {
     LOGIN: {TITLE: 'Login'},
