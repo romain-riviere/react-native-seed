@@ -6,13 +6,13 @@ import {
   createStackNavigator,
 } from '@react-navigation/stack';
 import TabNavigator from './TabNavigator';
-import ProfileScreen from '../screens/ProfileScreen';
+import ProfileScreen from '../components/screens/ProfileScreen';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {AppColors, AppIcons, AppRoutes, AppSettings} from '../Constants';
 import I18n from 'react-native-i18n';
 import {TransitionSpec} from '@react-navigation/stack/lib/typescript/src/types';
-import auth, {FirebaseAuthTypes} from '@react-native-firebase/auth';
+import {FirebaseAuthTypes} from '@react-native-firebase/auth';
 
 const Stack = createStackNavigator();
 
@@ -25,13 +25,6 @@ class StackNavigator extends React.Component {
       duration: 200,
     },
   };
-
-  constructor(props: Readonly<{}>) {
-    super(props);
-    auth().onAuthStateChanged((user) => {
-      this.user = user;
-    });
-  }
 
   render() {
     return (

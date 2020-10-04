@@ -11,7 +11,10 @@ export default {
     EMAIL_NOT_VERIFIED: 'Verification needed',
   },
   AUTHENTICATION_SCREEN: {
-    LOGIN: {TITLE: 'Login'},
-    REGISTER: {TITLE: 'Register'},
+    TO_SIGNIN: 'You already have an account! Sign In',
+    TO_SIGNUP: "You don't have an account! Sign Up",
+    SIGNIN_ANONYMOUSLY: 'Sign in anonymously',
+    SIGNIN: {TITLE: 'Sign in'},
+    SIGNUP: {TITLE: 'Sign up'},
   },
 };

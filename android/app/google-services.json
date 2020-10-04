@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "330371363-vko5m0rj7pc9rrl9arjf27vjoa3o3o95.apps.googleusercontent.com",
+          "client_id": "330371363-mugnl66rl1irgiv7nsp3si25ihrpean3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.reactnativeseed",
-            "certificate_hash": "d7136c3c585412981811e42b7c87e97900c70ede"
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
           }
         },
         {

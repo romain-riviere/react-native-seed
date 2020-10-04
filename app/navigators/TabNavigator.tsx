@@ -1,12 +1,12 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import ActivityScreen from '../screens/ActivityScreen';
-import HomeScreen from '../screens/HomeScreen';
+import ActivityScreen from '../components/screens/ActivityScreen';
+import HomeScreen from '../components/screens/HomeScreen';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {AppColors, AppIcons, AppRoutes} from '../Constants';
-import PreferencesScreen from '../screens/ProfileScreen';
+import PreferencesScreen from '../components/screens/ProfileScreen';
 import {StyleSheet} from 'react-native';
 import I18n from 'react-native-i18n';
 

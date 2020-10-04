@@ -1,5 +1,7 @@
 export module AppSettings {
   export const APP_NAME = 'ReactNativeSeed';
+  export const WEB_CLIENT_ID =
+    '330371363-v3a2g63pgigrggg26rrsaq7u1m909l3q.apps.googleusercontent.com';
 }
 
 export module AppRoutes {
@@ -7,8 +9,8 @@ export module AppRoutes {
   export const STACK_PROFILE = 'stack.profile';
   export const TAB_HOME = 'tab.home';
   export const TAB_ACTIVITY = 'tab.activity';
-  export const AUTH_LOGIN = 'auth.LOGIN';
-  export const AUTH_REGISTER = 'auth.REGISTER';
+  export const AUTH_SIGNIN = 'auth.SIGNIN';
+  export const AUTH_SIGNUP = 'auth.SIGNUP';
 }
 
 export module AppIcons {
@@ -23,11 +25,13 @@ export module AppIcons {
 }
 
 export module AppColors {
-  export const MAIN = '#f1500b';
+  export const MAIN = '#5bb6f1';
   export const INACTIVE = '#656565';
   export const BLACK = '#000000';
+  export const BLACK_TRANSPARENT = 'rgba(0,0,0,0.1)';
   export const WHITE = '#ffffff';
+  export const WHITE_TRANSPARENT = 'rgba(255,255,255,0.1)';
   export const SUCCESS = '#00db04';
-  export const DANGER = '#e70000';
+  export const ERROR = '#e70000';
   export const WARNING = '#fd8c00';
 }
