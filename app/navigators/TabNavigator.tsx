@@ -42,6 +42,7 @@ class TabNavigator extends React.Component {
           tabBarOptions={{
             activeTintColor: AppColors.MAIN,
             inactiveTintColor: AppColors.INACTIVE,
+            showLabel: false,
           }}>
           <Tab.Screen
             name={AppRoutes.TAB_HOME}

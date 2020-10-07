@@ -25,7 +25,7 @@ export module AppIcons {
 }
 
 export module AppColors {
-  export const MAIN = '#5bb6f1';
+  export const MAIN = '#ff5522';
   export const INACTIVE = '#656565';
   export const BLACK = '#000000';
   export const BLACK_TRANSPARENT = 'rgba(0,0,0,0.1)';

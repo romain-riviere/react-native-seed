@@ -18,6 +18,7 @@ interface Props {}
 class AuthenticationScreen extends React.Component<Props, State> {
   static contextType = AuthContext;
   private authService!: AuthService;
+  private componentIsMounted: boolean = false;
 
   constructor(props: Props) {
     super(props);
@@ -25,10 +26,17 @@ class AuthenticationScreen extends React.Component<Props, State> {
   }
 
   componentDidMount() {
+    this.componentIsMounted = true;
     this.authService = this.context;
     this.authService.onAuthStateChanged((newUser) => {
-      this.setState({user: newUser});
+      if (this.componentIsMounted) {
+        this.setState({user: newUser});
+      }
     });
+  }
+
+  componentWillUnmount() {
+    this.componentIsMounted = false;
   }
 
   private _onPressSignInAnonymous = async () => {
