@@ -6,11 +6,11 @@ Feel free to fork. Feel free to create issues for any problem you encounter or a
 
 ## Installing and building the app
 
-```TODO
+```TODO```
 
 ## Used libraries
 
-```TODO
+```TODO```
 
 | Library | Android | iOS |
 |---------|---------|-----|
